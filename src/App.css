@@ -1,38 +1,152 @@
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--meshki1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.upBox {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rightUpBox {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+input {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  width: 48%;
+  height: 40px;
+  border-radius: 9px;
+  padding-left: 11px;
+  background-color: var(--gray);
+  color: var(--sefid);
+  border: none;
+  align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input::placeholder {
+  color: var(--meshki1);
+  font-weight: 800;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.massBox {
+  width: 40%;
+  height: 30px;
+  margin-bottom: 2rem;
+}
+
+.massTextWrong {
+  color: red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.massTextRight {
+  color: green;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+button {
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 9px;
+  border: none;
+  background: var(--zard);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.leftUpBox {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftUpImage {
+  width: 60%;
+  height: 80%;
+
+}
+
+.downBox {
+  gap: 12px;
+  background-color: var(--zard);
+  height: 30vh;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+
+.downRight {
+  width: 40%;
+  direction: rtl;
+  padding: 8px;
+}
+
+.downLeft {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.downImages {
+  width: 15%;
+  height: 60%;
+}
+
+@media only screen and (max-width:800px) {
+  .upBox {
+    padding-top: 10%;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  input {
+    width: 100%;
+  }
+
+  .downBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .downRight {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .downBox {
+    gap: 2px;
+  }
+
+  .downLeft {
+    width: 80%;
   }
 }
